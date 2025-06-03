@@ -1,41 +1,46 @@
-<!DOCTYPE html><html lang="ja">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>本棚メニュー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-image: url('bookshelf_background.jpg'); /* ここにあの本棚画像のファイル名 */
-      background-size: cover;
-      background-position: center;
-      font-family: sans-serif;
-    }.book-link {
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 200px;
-  text-indent: -9999px; /* 文字を見えなくする */
-}
-
-/* 本の位置はここで調整 */
-.book1 { left: 12%; top: 25%; }   /* プロフィール */
-.book2 { left: 32%; top: 25%; }   /* 作品 */
-.book3 { left: 52%; top: 25%; }   /* ダイアリー */
-
-@media screen and (max-width: 768px) {
-  .book-link {
-    width: 18vw;
-    height: 35vh;
-  }
-}
-
+      background: #000;
+    }
+    .bookshelf {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+    }
+    .bookshelf img {
+      width: 100%;
+      display: block;
+    }
+    .book-link {
+      position: absolute;
+      display: block;
+      /* 本のサイズと位置（左・上・幅・高さ）は調整してね） */
+    }
+    .profile   { top: 8%; left: 4%;  width: 18%; height: 20%; }
+    .artworks  { top: 8%; left: 24%; width: 18%; height: 20%; }
+    .videos    { top: 8%; left: 44%; width: 18%; height: 20%; }
+    .diary     { top: 8%; left: 64%; width: 18%; height: 20%; }
+    .figures   { top: 55%; left: 4%;  width: 18%; height: 20%; }
+    .illustration { top: 55%; left: 24%; width: 18%; height: 20%; }
   </style>
 </head>
 <body>
-  <a href="profile.html" class="book-link book1">プロフィール</a>
-  <a href="works.html" class="book-link book2">作品</a>
-  <a href="diary.html" class="book-link book3">日記</a>
+  <div class="bookshelf">
+    <img src="images/bookshelf_background.jpg" alt="本棚">
+    <a href="profile.html" class="book-link profile"   title="プロフィール"></a>
+    <a href="artworks.html" class="book-link artworks" title="作品"></a>
+    <a href="videos.html" class="book-link videos"     title="動画"></a>
+    <a href="diary.html" class="book-link diary"       title="日記"></a>
+    <a href="figures.html" class="book-link figures"   title="立体作品"></a>
+    <a href="illustration.html" class="book-link illustration" title="イラスト"></a>
+  </div>
 </body>
 </html>
