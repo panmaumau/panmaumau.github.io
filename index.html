@@ -20,8 +20,9 @@
     }
 
     .bookshelf img {
-      width: auto;
       height: 100%;
+      width: auto;
+      max-width: 100%;
       display: block;
       margin: 0 auto;
     }
@@ -31,19 +32,20 @@
       display: block;
     }
 
-    /* 本の位置（画像比率に合わせて調整） */
-    .profile     { top: 12%; left: 12%; width: 14%; height: 13%; }
-    .artworks    { top: 12%; left: 31%; width: 14%; height: 13%; }
-    .videos      { top: 12%; left: 50%; width: 14%; height: 13%; }
-    .diary       { top: 12%; left: 69%; width: 14%; height: 13%; }
-    .figures     { top: 55%; left: 12%; width: 14%; height: 13%; }
-    .illustration{ top: 55%; left: 31%; width: 14%; height: 13%; }
+    /* 本の位置（縦横比を想定して調整） */
+    .profile     { top: 11%; left: 13%; width: 11%; height: 12%; }
+    .artworks    { top: 11%; left: 31%; width: 11%; height: 12%; }
+    .videos      { top: 11%; left: 49%; width: 11%; height: 12%; }
+    .diary       { top: 11%; left: 67%; width: 11%; height: 12%; }
+
+    .figures     { top: 53%; left: 13%; width: 11%; height: 12%; }
+    .illustration{ top: 53%; left: 31%; width: 11%; height: 12%; }
   </style>
 </head>
 <body>
   <div class="bookshelf">
     <img src="images/bookshelf_background.jpg" alt="本棚">
-    
+
     <a href="profile.html" class="book-link profile" title="プロフィール"></a>
     <a href="artworks.html" class="book-link artworks" title="作品"></a>
     <a href="videos.html" class="book-link videos" title="動画"></a>
