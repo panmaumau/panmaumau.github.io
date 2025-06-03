@@ -9,37 +9,43 @@
       margin: 0;
       background: #000;
     }
+
     .bookshelf {
       position: relative;
       width: 100%;
-      max-width: 500px;
+      max-width: 600px;
       margin: auto;
     }
+
     .bookshelf img {
       width: 100%;
+      height: auto;
       display: block;
     }
+
     .book-link {
       position: absolute;
       display: block;
-      /* 本のサイズと位置（左・上・幅・高さ）は調整してね） */
     }
-    .profile   { top: 8%; left: 4%;  width: 18%; height: 20%; }
-    .artworks  { top: 8%; left: 24%; width: 18%; height: 20%; }
-    .videos    { top: 8%; left: 44%; width: 18%; height: 20%; }
-    .diary     { top: 8%; left: 64%; width: 18%; height: 20%; }
-    .figures   { top: 55%; left: 4%;  width: 18%; height: 20%; }
-    .illustration { top: 55%; left: 24%; width: 18%; height: 20%; }
+
+    /* 各本の位置（左: left, 上: top, 幅: width, 高さ: height） */
+    .profile     { top:  5%; left:  4%; width: 18%; height: 20%; }
+    .artworks    { top:  5%; left: 24%; width: 18%; height: 20%; }
+    .videos      { top:  5%; left: 44%; width: 18%; height: 20%; }
+    .diary       { top:  5%; left: 64%; width: 18%; height: 20%; }
+    .figures     { top: 55%; left:  4%; width: 18%; height: 20%; }
+    .illustration{ top: 55%; left: 24%; width: 18%; height: 20%; }
   </style>
 </head>
 <body>
   <div class="bookshelf">
     <img src="images/bookshelf_background.jpg" alt="本棚">
-    <a href="profile.html" class="book-link profile"   title="プロフィール"></a>
+    
+    <a href="profile.html" class="book-link profile" title="プロフィール"></a>
     <a href="artworks.html" class="book-link artworks" title="作品"></a>
-    <a href="videos.html" class="book-link videos"     title="動画"></a>
-    <a href="diary.html" class="book-link diary"       title="日記"></a>
-    <a href="figures.html" class="book-link figures"   title="立体作品"></a>
+    <a href="videos.html" class="book-link videos" title="動画"></a>
+    <a href="diary.html" class="book-link diary" title="日記"></a>
+    <a href="figures.html" class="book-link figures" title="立体作品"></a>
     <a href="illustration.html" class="book-link illustration" title="イラスト"></a>
   </div>
 </body>
