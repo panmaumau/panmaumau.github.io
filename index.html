@@ -30,28 +30,29 @@
     .book-link {
       position: absolute;
       display: block;
+      text-indent: -9999px; /* 文字を画面外に */
+      overflow: hidden;
     }
 
     /* 本の位置（縦横比を想定して調整） */
-    .profile     { top: 11%; left: 13%; width: 11%; height: 12%; }
-    .artworks    { top: 11%; left: 31%; width: 11%; height: 12%; }
-    .videos      { top: 11%; left: 49%; width: 11%; height: 12%; }
-    .diary       { top: 11%; left: 67%; width: 11%; height: 12%; }
-
-    .figures     { top: 53%; left: 13%; width: 11%; height: 12%; }
-    .illustration{ top: 53%; left: 31%; width: 11%; height: 12%; }
+    .profile      { top: 11%; left: 13%; width: 11%; height: 12%; }
+    .artworks     { top: 11%; left: 31%; width: 11%; height: 12%; }
+    .videos       { top: 11%; left: 49%; width: 11%; height: 12%; }
+    .diary        { top: 11%; left: 67%; width: 11%; height: 12%; }
+    .figures      { top: 53%; left: 13%; width: 11%; height: 12%; }
+    .illustration { top: 53%; left: 31%; width: 11%; height: 12%; }
   </style>
 </head>
 <body>
   <div class="bookshelf">
     <img src="images/bookshelf_background.jpg" alt="本棚">
 
-    <a href="profile.html" class="book-link profile" title="プロフィール"></a>
-    <a href="artworks.html" class="book-link artworks" title="作品"></a>
-    <a href="videos.html" class="book-link videos" title="動画"></a>
-    <a href="diary/index.html" class="book-link diary" title="日記"></a>
-    <a href="figures.html" class="book-link figures" title="立体作品"></a>
-    <a href="illustration.html" class="book-link illustration" title="イラスト"></a>
+    <a href="profile.html"      class="book-link profile">プロフィール</a>
+    <a href="artworks.html"     class="book-link artworks">作品</a>
+    <a href="videos.html"       class="book-link videos">動画</a>
+    <a href="diary/"            class="book-link diary">日記</a>
+    <a href="figures.html"      class="book-link figures">立体作品</a>
+    <a href="illustration.html" class="book-link illustration">イラスト</a>
   </div>
 </body>
 </html>
