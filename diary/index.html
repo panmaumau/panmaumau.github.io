@@ -2,43 +2,34 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>日記</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日記インデックス</title>
   <style>
     body {
-      background-color: #fdf6e3; /* 羊皮紙っぽい色 */
-      font-family: 'serif';
+      background-color: #f5f0e6;
+      font-family: sans-serif;
       padding: 2em;
     }
     h1 {
       text-align: center;
     }
-    .entry-list {
-      max-width: 600px;
-      margin: auto;
+    .month-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .entry-list a {
-      display: block;
-      background-color: #fff8dc;
-      margin: 1em 0;
-      padding: 1em;
-      border-radius: 8px;
+    .month-list a {
+      margin: 0.5em;
       text-decoration: none;
       color: #333;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-      transition: 0.3s;
-    }
-    .entry-list a:hover {
-      background-color: #f0e6c8;
+      font-size: 1.2em;
     }
   </style>
 </head>
 <body>
-  <h1>日記の記録</h1>
-  <div class="entry-list">
-    <a href="pages/2025-06-04.html">2025年6月4日</a>
-    <a href="pages/2025-06-03.html">2025年6月3日</a>
-    <!-- どんどん追加できる -->
+  <h1>日記</h1>
+  <div class="month-list">
+    <a href="2025-06/index.html">2025年6月</a>
+    <!-- ここにどんどん月を追加 -->
   </div>
 <footer style="text-align: center; padding: 1em; color: #ccc; font-size: 0.9em;">
   © 2025 ネヅミまる
