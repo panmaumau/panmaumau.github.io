@@ -2,69 +2,46 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ダイヤリー | ﾈﾂﾞﾐまる</title>
+  <title>日記</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0;
-      padding: 1em;
-      background-color: #f8f5e4;
-      font-family: 'Yu Gothic', sans-serif;
-      color: #333;
+      background-color: #fdf6e3; /* 羊皮紙っぽい色 */
+      font-family: 'serif';
+      padding: 2em;
     }
-    header {
+    h1 {
       text-align: center;
-      font-size: 2em;
-      margin-bottom: 1em;
     }
-    .entry {
-      background: #fff8dc;
-      border-left: 6px solid #d2b48c;
+    .entry-list {
+      max-width: 600px;
+      margin: auto;
+    }
+    .entry-list a {
+      display: block;
+      background-color: #fff8dc;
+      margin: 1em 0;
       padding: 1em;
-      margin-bottom: 1em;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    }
-    .entry h2 {
-      margin-top: 0;
-      font-size: 1.4em;
-      color: #6b4f28;
-    }
-    .entry p {
-      margin-bottom: 0;
-    }
-    .nav {
-      text-align: center;
-      margin-top: 2em;
-    }
-    .nav a {
-      margin: 0 1em;
+      border-radius: 8px;
       text-decoration: none;
-      color: #5a3e1b;
-      font-weight: bold;
+      color: #333;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      transition: 0.3s;
     }
-    footer {
-      text-align: center;
-      margin-top: 3em;
-      font-size: 0.9em;
-      color: #888;
+    .entry-list a:hover {
+      background-color: #f0e6c8;
     }
   </style>
 </head>
 <body>
-  <header>日記帳｜ﾈﾂﾞﾐまる</header>
-
-  <div class="entry">
-    <h2>2025年6月4日</h2>
-    <p>今日は本棚メニューがうまく動いてうれしかった！画像のサイズやリンク配置にも挑戦した。進んでる感じがする！</p>
+  <h1>日記の記録</h1>
+  <div class="entry-list">
+    <a href="pages/2025-06-04.html">2025年6月4日</a>
+    <a href="pages/2025-06-03.html">2025年6月3日</a>
+    <!-- どんどん追加できる -->
   </div>
-
-  <div class="nav">
-    <a href="#">← 前の日</a>
-    <a href="#">次の日 →</a>
-  </div>
-
-  <footer>
-    © 2025 ﾈﾂﾞﾐまる
-  </footer>
+<footer style="text-align: center; padding: 1em; color: #ccc; font-size: 0.9em;">
+  © 2025 ネヅミまる
+</footer>
 </body>
 </html>
